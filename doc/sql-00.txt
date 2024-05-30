@@ -1,0 +1,273 @@
+
+        CREATE TABLE IF NOT EXISTS `descuentos` (
+        `id` int NOT NULL AUTO_INCREMENT,
+        `idUser` int NOT NULL,
+        `idProduct` int DEFAULT NULL,
+        `idCategory` int DEFAULT NULL,
+        `idSubCategory` int DEFAULT NULL,
+        `discount` int NOT NULL,
+        `status` enum('Activo','Inactivo') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'Activo',
+        `reason` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+        `finished_date` timestamp NULL DEFAULT NULL,
+        `creation_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`),
+        KEY `ForeingKey-Descuentos_Categorias` (`idCategory`),
+        KEY `ForeingKey-Descuentos_Producto` (`idProduct`),
+        KEY `ForeingKey-Descuentos_Usuarios` (`idUser`),
+        KEY `ForeingKey-Descuentos_SubCategorias` (`idSubCategory`),
+        CONSTRAINT `ForeingKey-Descuentos_Categorias` FOREIGN KEY (`idCategory`) REFERENCES `categorias` (`id`) ON UPDATE CASCADE,
+        CONSTRAINT `ForeingKey-Descuentos_Producto` FOREIGN KEY (`idProduct`) REFERENCES `productos` (`id`) ON UPDATE CASCADE,
+        CONSTRAINT `ForeingKey-Descuentos_SubCategorias` FOREIGN KEY (`idSubCategory`) REFERENCES `categorias` (`id`) ON UPDATE CASCADE,
+        CONSTRAINT `ForeingKey-Descuentos_Usuarios` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`) ON UPDATE CASCADE
+        ) COLLATE=latin1_swedish_ci ENGINE=InnoDB;
+
+
+        ALTER TABLE `productos` ADD COLUMN `purchasePrice` INT(10) NULL DEFAULT NULL AFTER `creation_date`;
+
+        ALTER TABLE `orders_productos` ADD COLUMN `priceProduct` INT(10) NULL DEFAULT '0' AFTER `tallas_id`;
+
+        ALTER TABLE `orders_productos` ADD COLUMN `discountApplied` INT(10) NULL DEFAULT '0' AFTER `priceProduct`;
+
+        CREATE TABLE IF NOT EXISTS `descuento_producto` (
+        `id` int NOT NULL AUTO_INCREMENT,
+        `idOrderProduct` INT(10) NOT NULL,
+        `idDiscount` INT(10) NULL DEFAULT NULL,
+        PRIMARY KEY (`id`) USING BTREE,
+        INDEX `ForeingKey-DescuentoProducto_OrderProducto` (`idOrderProduct`) USING BTREE,
+        INDEX `ForeingKey-DescuentoProducto_Descuento` (`idDiscount`) USING BTREE,
+        CONSTRAINT `ForeingKey-DescuentoProducto_Descuento` FOREIGN KEY (`idDiscount`) REFERENCES `descuentos` (`id`) ON UPDATE CASCADE ON DELETE NO ACTION,
+        CONSTRAINT `ForeingKey-DescuentoProducto_OrderProducto` FOREIGN KEY (`idOrderProduct`) REFERENCES `orders_productos` (`id`) ON UPDATE CASCADE ON DELETE CASCADE
+    ) COLLATE='latin1_swedish_ci' ENGINE=InnoDB;
+
+
+        ALTER TABLE `orders` ADD COLUMN `motiveCoutersy` VARCHAR(256) NULL AFTER `is_reserved_for_pick`;
+
+
+        CREATE TABLE IF NOT EXISTS `codigos_descuento` (
+        `id` int NOT NULL AUTO_INCREMENT,
+        `idProduct` int DEFAULT NULL,
+        `minimumPurchase` int DEFAULT NULL,
+        `numberUses` int NOT NULL DEFAULT '1',
+        `uniqueCode` enum('Si','No') CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT 'Si',
+        `discount` int NOT NULL DEFAULT '0',
+        `status` enum('Activo','Inactivo') COLLATE latin1_swedish_ci DEFAULT 'Activo',
+        `creation_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+        `finished_at` timestamp NULL DEFAULT NULL,
+        PRIMARY KEY (`id`),
+        KEY `ForeingKey-Producto_Codigo` (`idProduct`),
+        CONSTRAINT `ForeingKey-Producto_Codigo` FOREIGN KEY (`idProduct`) REFERENCES `productos` (`id`) ON DELETE SET NULL ON UPDATE SET NULL
+        )COLLATE='latin1_swedish_ci';
+
+
+        CREATE TABLE IF NOT EXISTS `codigos` (
+        `id` int NOT NULL AUTO_INCREMENT,
+        `idUser` int DEFAULT NULL,
+        `idCodeDiscount` int NOT NULL,
+        `code` varchar(50) COLLATE latin1_swedish_ci NOT NULL,
+        `status` enum('Activo','Inactivo') COLLATE latin1_swedish_ci NOT NULL DEFAULT 'Activo',
+        PRIMARY KEY (`id`),
+        KEY `ForeingKey-Codigos_Codigo` (`idCodeDiscount`),
+        KEY `ForeingKey-User_Codigo` (`idUser`),
+        CONSTRAINT `ForeingKey-Codigos_Codigo` FOREIGN KEY (`idCodeDiscount`) REFERENCES `codigos_descuento` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+        CONSTRAINT `ForeingKey-User_Codigo` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+        ) COLLATE='latin1_swedish_ci';
+
+    CREATE TABLE IF NOT EXISTS `ordenes_codigos_descuentos` (
+    `id` int NOT NULL AUTO_INCREMENT,
+    `idOrder` int NOT NULL,
+    `idCodeDiscount` int NOT NULL,
+    PRIMARY KEY (`id`),
+    KEY `ForeingKey-Orders_Codigo_Descuento` (`idOrder`),
+    KEY `ForeingKey-Codigo_Descuento` (`idCodeDiscount`),
+    CONSTRAINT `ForeingKey-Codigo_Descuento` FOREIGN KEY (`idCodeDiscount`) REFERENCES `codigos_descuento` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT `ForeingKey-Orders_Codigo_Descuento` FOREIGN KEY (`idOrder`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+    )COLLATE='latin1_swedish_ci' ;
+
+
+        CREATE TABLE IF NOT EXISTS `membresia` (
+            `id` int NOT NULL AUTO_INCREMENT,
+            `name` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+            `description` MEDIUMTEXT NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+            `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            `updated_at` TIMESTAMP NULL DEFAULT NULL,
+            `deleted_at` TIMESTAMP NULL DEFAULT NULL,
+            PRIMARY KEY (`id`) USING BTREE
+        )COLLATE='latin1_swedish_ci' ENGINE=InnoDB;
+
+
+        CREATE TABLE IF NOT EXISTS `usuario_membresia` (
+            `idUser` INT(10) NOT NULL,
+            `idMemberShip` INT(10) NOT NULL,
+            `status` ENUM('Activo','Inactivo') NOT NULL DEFAULT 'Activo' COLLATE 'latin1_swedish_ci',
+            `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            `updated_at` TIMESTAMP NULL DEFAULT NULL,
+            `finished_at` TIMESTAMP NULL DEFAULT NULL,
+            INDEX `ForeingKey-User_MemberShip` (`idUser`) USING BTREE,
+            INDEX `ForeingKey-UserMemberShip_MemberShip` (`idMemberShip`) USING BTREE,
+            CONSTRAINT `ForeingKey-UserMemberShip_MemberShip` FOREIGN KEY (`idMemberShip`) REFERENCES `membresia` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+            CONSTRAINT `ForeingKey-User_MemberShip` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+        ) COLLATE='latin1_swedish_ci' ENGINE=InnoDB;
+
+
+        CREATE TABLE IF NOT EXISTS `precio_membresia` (
+            `id` int NOT NULL AUTO_INCREMENT,
+            `price` FLOAT NULL DEFAULT NULL,
+            `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            `updated_at` TIMESTAMP NULL DEFAULT NULL,
+            `deleted_at` TIMESTAMP NULL DEFAULT NULL,
+            PRIMARY KEY (`id`) USING BTREE
+        ) COLLATE='latin1_swedish_ci' ENGINE=InnoDB;
+
+
+        CREATE TABLE IF NOT EXISTS `precios_membresias` (
+            `idPrice` INT(10) NOT NULL,
+            `idMemberShip` INT(10) NOT NULL,
+            `status` ENUM('Activo','Inactivo') NOT NULL DEFAULT 'Activo' COLLATE 'latin1_swedish_ci',
+            `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            `updated_at` TIMESTAMP NULL DEFAULT NULL,
+            INDEX `ForeingKey-PrecioMembresias_PrecioMembresia` (`idPrice`) USING BTREE,
+            INDEX `ForeingKey-Membrecia_PreciosMembresias` (`idMemberShip`) USING BTREE,
+            CONSTRAINT `ForeingKey-Membrecia_PreciosMembresias` FOREIGN KEY (`idMemberShip`) REFERENCES `membresia` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+            CONSTRAINT `ForeingKey-PrecioMembresias_PrecioMembresia` FOREIGN KEY (`idPrice`) REFERENCES `precio_membresia` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+        ) COLLATE='latin1_swedish_ci' ENGINE=InnoDB;
+
+
+        ALTER TABLE `descuentos`
+        ADD COLUMN `idMemberShip` INT(10) NULL DEFAULT NULL AFTER `idSubCategory`,
+        ADD CONSTRAINT `ForeingKey-Descuentos_Membresias` FOREIGN KEY (`idMemberShip`) REFERENCES `membresia` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
+
+
+        CREATE TABLE IF NOT EXISTS `orders_membresias` (
+            `id` int NOT NULL AUTO_INCREMENT,
+            `idOrders` INT(10) NOT NULL,
+            `idMembresia` INT(10) NOT NULL,
+            `price` FLOAT NULL DEFAULT NULL,
+            `benefit` LONGTEXT NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+            `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            `updated_at` TIMESTAMP NULL DEFAULT NULL,
+            PRIMARY KEY (`id`) USING BTREE,
+            INDEX `ForeingKey-Orders_Order` (`idOrders`) USING BTREE,
+            INDEX `ForeingKey-Order_Membresia` (`idMembresia`) USING BTREE,
+            CONSTRAINT `ForeingKey-Orders_Order` FOREIGN KEY (`idOrders`) REFERENCES `orders` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+            CONSTRAINT `ForeingKey-Order_Membresia` FOREIGN KEY (`idMembresia`) REFERENCES `membresia` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+        )
+        COLLATE='latin1_swedish_ci'
+        ENGINE=InnoDB
+        ;
+
+
+        ALTER TABLE `users`
+            CHANGE COLUMN `updated_date` `updated_date` TIMESTAMP NOT NULL AFTER `updated_at`,
+            ADD COLUMN `curp` VARCHAR(50) NULL AFTER `creation_date`,
+            ADD COLUMN `profession` VARCHAR(50) NULL AFTER `curp`,
+            ADD COLUMN `convenio` VARCHAR(50) NULL AFTER `profession`;
+
+
+        ALTER TABLE `usuario_membresia`
+            ADD COLUMN `numberControl` VARCHAR(50) NOT NULL AFTER `finished_at`;
+
+
+
+///////////////////////////////////////////////////////////////////////////EVENTOS///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+DELIMITER //
+
+        CREATE EVENT deshabilitar_descuentos ON SCHEDULE EVERY 1 HOUR STARTS '2023-02-12 00:00:00' ON COMPLETION PRESERVE
+            COMMENT 'Inactiva los descuentos en la fecha y hora dada.'
+            DO
+                BEGIN
+
+                    DECLARE idDiscount INT;
+                    DECLARE finishedDate TIMESTAMP;
+
+                    DECLARE statusOne VARCHAR(8) DEFAULT 'Activo';
+                    DECLARE statusTwo VARCHAR(8) DEFAULT 'Inactivo';
+                    DECLARE currentDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP();
+                    DECLARE done TINYINT DEFAULT 0;
+
+                    DECLARE row_discount CURSOR FOR SELECT id, finished_date FROM descuentos WHERE descuentos.`status` = statusOne;
+
+                    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
+
+                    OPEN row_discount;
+
+                    execute_loop: LOOP
+
+                        FETCH row_discount INTO idDiscount, finishedDate;
+
+                        IF done THEN
+
+                            LEAVE execute_loop;
+
+                    END IF;
+
+
+                    IF (DATE_FORMAT(currentDate, '%Y-%m-%d %H') >= DATE_FORMAT(finishedDate, '%Y-%m-%d %H')) || finishedDate IS NULL THEN
+
+                            UPDATE descuentos SET STATUS = statusTwo WHERE id = idDiscount;
+
+                        END IF;
+
+                    END LOOP;
+
+                    CLOSE row_discount;
+
+                END //
+
+        DELIMITER ;
+
+
+
+////////////////////////////////////////////////////////////////////////////TRIGGERS//////////////////////////////////////////////////////////////////////////
+
+
+ DELIMITER //
+
+        CREATE TRIGGER generar_codigo_descuento BEFORE INSERT ON codigos FOR EACH ROW
+            BEGIN
+
+                IF NEW.code IS NULL THEN
+
+                    SET NEW.code = UUID();
+
+                END IF;
+
+            END //
+
+        DELIMITER ;
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+TABLAS REALIZADAS PERO DEBIDO A LOS CAMBIOS SE ELIMINARON
+
+
+1.-
+        CREATE TABLE IF NOT EXISTS `tipo_beneficio` (
+            `id` INT(10) NOT NULL AUTO_INCREMENT,
+            `name` VARCHAR(50) NOT NULL COLLATE 'latin1_swedish_ci',
+            `description` MEDIUMTEXT NOT NULL COLLATE 'latin1_swedish_ci',
+            `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            `updated_at` TIMESTAMP NULL DEFAULT NULL,
+            `deleted_at` TIMESTAMP NULL DEFAULT NULL,
+            PRIMARY KEY (`id`) USING BTREE
+        ) COLLATE='latin1_swedish_ci' ENGINE=InnoDB;
+2.-
+        CREATE TABLE IF NOT EXISTS `beneficio_membresia` (
+            `idTypeBenefit` INT(10) NOT NULL,
+            `idMembership` INT(10) NOT NULL,
+            `status` ENUM('Activo','Inactivo') NOT NULL COLLATE 'latin1_swedish_ci',
+            `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            `updated_at` TIMESTAMP NULL DEFAULT NULL,
+            INDEX `ForeingKey-TipoBeneficio_BeneficioMembresia` (`idTypeBenefit`) USING BTREE,
+            INDEX `ForeingKey-Membresia_BeneficioMembresia` (`idMembership`) USING BTREE,
+            CONSTRAINT `ForeingKey-Membresia_BeneficioMembresia` FOREIGN KEY (`idMembership`) REFERENCES `membresia` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+            CONSTRAINT `ForeingKey-TipoBeneficio_BeneficioMembresia` FOREIGN KEY (`idTypeBenefit`) REFERENCES `tipo_beneficio` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+        ) COLLATE='latin1_swedish_ci' ENGINE=InnoDB;
+
+3.-

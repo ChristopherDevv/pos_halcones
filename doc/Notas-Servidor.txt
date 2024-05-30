@@ -1,0 +1,5 @@
+Modificar el controlador: halcones-administrador\app\Http\Controllers\api\ImagenesController.php el metodo getImageBlob() descomentar el path de servidor y comentar el local.
+
+Se debe agregar la caprte membresias en la carpeta public: "/public/membresias"
+
+Se debe agregar la caprte membresias en la carpeta public: "/public/sorteos"

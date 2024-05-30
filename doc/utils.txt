@@ -1,0 +1,3 @@
+$out = new \Symfony\Component\Console\Output\ConsoleOutput();
+$out->writeln();
+$out->writeln(json_encode());

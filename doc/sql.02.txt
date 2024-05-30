@@ -1,0 +1,124 @@
+CREATE TABLE `sorteo` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+    `type` ENUM('Evidencia','EvidenciaCodigo','EvidenciaMultimedia') NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`name` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`description` TEXT NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`rules` TEXT NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`method_raffle` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`initial_date` TIMESTAMP NULL DEFAULT NULL,
+	`finished_date` TIMESTAMP NULL DEFAULT NULL,
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+
+
+CREATE TABLE `multimedia_sorteo` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_raffle` INT(10) NOT NULL,
+	`name` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`type` ENUM('Imagen','Video') NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Sorteo_MultimediaSorteo` (`id_raffle`) USING BTREE,
+	CONSTRAINT `ForeingKey-Sorteo_MultimediaSorteo` FOREIGN KEY (`id_raffle`) REFERENCES `sorteo` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+
+CREATE TABLE `sorteo_usuario` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_raffle` INT(10) NULL DEFAULT NULL,
+	`id_user` INT(10) NULL DEFAULT NULL,
+    `code` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`status` ENUM('Activo','Inactivo','Ganador') NOT NULL DEFAULT 'Activo' COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Sorteo_SorteoUsuario` (`id_raffle`) USING BTREE,
+	INDEX `ForeingKey-Usuario_SorteoUsuario` (`id_user`) USING BTREE,
+	CONSTRAINT `ForeingKey-Sorteo_SorteoUsuario` FOREIGN KEY (`id_raffle`) REFERENCES `sorteo` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+	CONSTRAINT `ForeingKey-Usuario_SorteoUsuario` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+
+CREATE TABLE `sorteo_partido` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_raffle` INT(10) NULL DEFAULT NULL,
+	`id_match` INT(10) NULL DEFAULT NULL,
+	`initial_date` TIMESTAMP NULL DEFAULT NULL,
+	`finished_date` TIMESTAMP NULL DEFAULT NULL,
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Sorteo_SorteoPartido` (`id_raffle`) USING BTREE,
+	INDEX `ForeingKey-Partido_SorteoPartido` (`id_match`) USING BTREE,
+	CONSTRAINT `ForeingKey-Partido_SorteoPartido` FOREIGN KEY (`id_match`) REFERENCES `partidos` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+	CONSTRAINT `ForeingKey-Sorteo_SorteoPartido` FOREIGN KEY (`id_raffle`) REFERENCES `sorteo` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+
+CREATE TABLE `evidencia_sorteo_partido` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_raffle_match` INT(10) NULL DEFAULT NULL,
+	`id_raffle_user` INT(10) NULL DEFAULT NULL,
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-SorteoUsuario_EvidenciaSorteoPartido` (`id_raffle_user`) USING BTREE,
+	INDEX `ForeingKey-PartidoUsuario_EvidenciaSorteoPartido` (`id_raffle_match`) USING BTREE,
+	CONSTRAINT `ForeingKey-PartidoUsuario_EvidenciaSorteoPartido` FOREIGN KEY (`id_raffle_match`) REFERENCES `sorteo_partido` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+	CONSTRAINT `ForeingKey-SorteoUsuario_EvidenciaSorteoPartido` FOREIGN KEY (`id_raffle_user`) REFERENCES `sorteo_usuario` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+CREATE TABLE `codigo_evidencia_sorteo_partido` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_evidence_raffle_match` INT(10) NOT NULL,
+	`reference` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-EvidenciaSorteoPartido_CodigoEvidenciaSorteoPartido` (`id_evidence_raffle_match`) USING BTREE,
+	CONSTRAINT `ForeingKey-EvidenciaSorteoPartido_CodigoEvidenciaSorteoPartido` FOREIGN KEY (`id_evidence_raffle_match`) REFERENCES `evidencia_sorteo_partido` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+CREATE TABLE `multimedia_evidencia_sorteo_partido` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_evidence_raffle_match` INT(10) NOT NULL,
+	`status` ENUM('Activo','Inactivo') NULL DEFAULT 'Activo' COLLATE 'latin1_swedish_ci',
+	`name` VARCHAR(100) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`type` ENUM('Imagen','Video') NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-EvidenciaSorteoPartido_MultimediaEvidencia` (`id_evidence_raffle_match`) USING BTREE,
+	CONSTRAINT `ForeingKey-EvidenciaSorteoPartido_MultimediaEvidencia` FOREIGN KEY (`id_evidence_raffle_match`) REFERENCES `evidencia_sorteo_partido` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;

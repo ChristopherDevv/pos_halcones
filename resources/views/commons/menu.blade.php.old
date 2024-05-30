@@ -1,0 +1,101 @@
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+        <div class="sidebar-brand-text mx-3"> <img src="{{asset('../assets/img/platformname.png')}}" alt="logo de halcones" width="100%" height="100%"> </div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" href="/inicio">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Indicadores</span></a>
+    </li>
+    <!--Finanzas-->
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Relación ingresos - egresos</span></a>
+    </li> --}}
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    {{-- <div class="sidebar-heading">
+        Finanzas
+    </div> --}}
+
+    <!--Finanzas, contabilidad, ingresos, egresos, tipos de ingreso, tipos de egresos-->
+    {{-- <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#admin_finanzas" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Finanzas</span>
+        </a>
+        <div id="admin_finanzas" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Ingresos</h6>
+                <a class="collapse-item" href="{{url('finanzas/nuevo_ingreso')}}">Nuevo ingreso</a>
+                <a class="collapse-item" href={{url('finanzas/tipos_ingreso')}}>Tipos de ingreso</a>
+                <a class="collapse-item" href={{url('finanzas/reportes')}}>Reportes</a>
+                <h6 class="collapse-header">Egresos</h6>
+                <a class="collapse-item" href={{url('finanzas/nuevo_egreso')}}>Nuevo Egreso</a>
+                <a class="collapse-item" href={{url('finanzas/tipo_egresos')}}>Tipos de egresos</a>
+                <a class="collapse-item" href={{url('finanzas/reportes')}}>Reportes</a>
+                <div class="collapse-divider"></div>
+            </div>
+        </div>
+    </li> --}}
+    {{-- <hr class="sidebar-divider"> --}}
+    {{-- <div class="sidebar-heading">
+        Almacenes
+    </div>
+        <!--administración de almacén-->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#admin_almacen" aria-expanded="true" aria-controls="collapsePages">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>Almacenes y productos</span>
+            </a>
+            <div id="admin_almacen" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">almacenes</h6>
+                    <a class="collapse-item" href="{{url('almacen/transferencias')}}">Transferencias</a>
+                    <a class="collapse-item" href={{url('almacen/nuevo_almacen')}}>Nuevo almacén</a>
+                    <a class="collapse-item" href={{url('almacen/lista_almacenes')}}>Lista de almacenes</a>
+                    <h6 class="collapse-header">conceptos</h6>
+                    <a class="collapse-item" href={{url('almacen/nuevo_producto')}}>nuevo producto</a>
+                    <a class="collapse-item" href={{url('almacen/lista_productos')}}>productos registrados</a>
+                    <div class="collapse-divider"></div>
+                </div>
+            </div>
+        </li> --}}
+
+        {{-- <hr class="sidebar-divider"> --}}
+        {{-- <div class="sidebar-heading">
+            Academias
+        </div>
+            <!--administración de almacén-->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#academias" aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Academias</span>
+                </a>
+                <div id="academias" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Academias</h6>
+                        <a class="collapse-item" href={{url('academias/alumnos')}}>Alumnos</a>
+                        <a class="collapse-item" href={{url('academias/becas')}}>Becas</a>
+                        <a class="collapse-item" href="{{url('academias/cursos')}}">Cursos</a>
+                        <a class="collapse-item" href={{url('academias/docentes')}}>Docentes</a>
+                    </div>
+                </div>
+            </li> --}}
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->

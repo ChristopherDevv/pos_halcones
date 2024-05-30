@@ -1,0 +1,3612 @@
+[
+    {
+        "id": 12,
+        "title": "Chamarra Negra",
+        "price": 1050,
+        "description": "Chamarra \"Halcones de Xalapa\" color negro.",
+        "stock": 68,
+        "status": 1,
+        "categorias_id": 26,
+        "updated_date": "2022-11-19T00:39:28.000000Z",
+        "creation_date": "2021-11-13T00:37:12.000000Z",
+        "categorias": {
+            "id": 26,
+            "value": "chamarras",
+            "title": "chamarras",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 12,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/ox6TIDFkag.png"
+            },
+            {
+                "name": null,
+                "rel_id": 12,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/XNlY3NEK1l.png"
+            },
+            {
+                "name": null,
+                "rel_id": 12,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/pXPGw4rzBM.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 12,
+                "cant": 22,
+                "value": 8,
+                "cantidad_tallas": 22,
+                "pivot": {
+                    "productos_id": 12,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 12,
+                "cant": 27,
+                "value": 9,
+                "cantidad_tallas": 27,
+                "pivot": {
+                    "productos_id": 12,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 12,
+                "cant": 5,
+                "value": 10,
+                "cantidad_tallas": 5,
+                "pivot": {
+                    "productos_id": 12,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 12,
+                "cant": 8,
+                "value": 11,
+                "cantidad_tallas": 8,
+                "pivot": {
+                    "productos_id": 12,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 12,
+                "cant": 4,
+                "value": 12,
+                "cantidad_tallas": 4,
+                "pivot": {
+                    "productos_id": 12,
+                    "tallas_id": 12
+                }
+            },
+            {
+                "id": 13,
+                "descripcion": "...",
+                "title": "Extra extra grande",
+                "abrev": "XXL",
+                "status": 1,
+                "tallas_id": 13,
+                "productos_id": 12,
+                "cant": 2,
+                "value": 13,
+                "cantidad_tallas": 2,
+                "pivot": {
+                    "productos_id": 12,
+                    "tallas_id": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Sudadera azul",
+        "price": 560,
+        "description": "Sudadera azul  con estampado de Halcones de Xalapa",
+        "stock": 91,
+        "status": 1,
+        "categorias_id": 19,
+        "updated_date": "2022-11-27T00:33:51.000000Z",
+        "creation_date": "2021-11-13T01:15:39.000000Z",
+        "categorias": {
+            "id": 19,
+            "value": "sudadera",
+            "title": "sudaderas",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 13,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/oJJUJG1iIu.png"
+            },
+            {
+                "name": null,
+                "rel_id": 13,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/YOtuISfa6j.png"
+            },
+            {
+                "name": null,
+                "rel_id": 13,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/PyhkAuq6pE.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 13,
+                "cant": 29,
+                "value": 9,
+                "cantidad_tallas": 29,
+                "pivot": {
+                    "productos_id": 13,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 13,
+                "cant": 27,
+                "value": 10,
+                "cantidad_tallas": 27,
+                "pivot": {
+                    "productos_id": 13,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 13,
+                "cant": 16,
+                "value": 11,
+                "cantidad_tallas": 16,
+                "pivot": {
+                    "productos_id": 13,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 13,
+                "cant": 19,
+                "value": 12,
+                "cantidad_tallas": 19,
+                "pivot": {
+                    "productos_id": 13,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Sudadera gris",
+        "price": 450,
+        "description": "Sudadera color gris con estampado de Halcones de Xalapa.",
+        "stock": 22,
+        "status": 1,
+        "categorias_id": 19,
+        "updated_date": "2022-11-16T23:10:07.000000Z",
+        "creation_date": "2021-11-13T01:34:37.000000Z",
+        "categorias": {
+            "id": 19,
+            "value": "sudadera",
+            "title": "sudaderas",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 14,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/p5SvAXygr5.png"
+            },
+            {
+                "name": null,
+                "rel_id": 14,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/VztlYfBKV6.png"
+            },
+            {
+                "name": null,
+                "rel_id": 14,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/mJXIDqwQ9e.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 14,
+                "cant": 0,
+                "value": 9,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 14,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 14,
+                "cant": 8,
+                "value": 10,
+                "cantidad_tallas": 8,
+                "pivot": {
+                    "productos_id": 14,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 14,
+                "cant": 7,
+                "value": 11,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 14,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 14,
+                "cant": 7,
+                "value": 12,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 14,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Sudadera verde",
+        "price": 450,
+        "description": "Sudadera azul verde con estampado de Halcones.",
+        "stock": 52,
+        "status": 1,
+        "categorias_id": 19,
+        "updated_date": "2022-11-18T06:46:54.000000Z",
+        "creation_date": "2021-11-13T01:48:40.000000Z",
+        "categorias": {
+            "id": 19,
+            "value": "sudadera",
+            "title": "sudaderas",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 15,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/qKKPntRkUP.png"
+            },
+            {
+                "name": null,
+                "rel_id": 15,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/lSFjIenFJZ.png"
+            },
+            {
+                "name": null,
+                "rel_id": 15,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/JJHpSZ1W7W.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 15,
+                "cant": 24,
+                "value": 9,
+                "cantidad_tallas": 24,
+                "pivot": {
+                    "productos_id": 15,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 15,
+                "cant": 7,
+                "value": 10,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 15,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 15,
+                "cant": 12,
+                "value": 11,
+                "cantidad_tallas": 12,
+                "pivot": {
+                    "productos_id": 15,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 15,
+                "cant": 9,
+                "value": 12,
+                "cantidad_tallas": 9,
+                "pivot": {
+                    "productos_id": 15,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Sudadera negra",
+        "price": 450,
+        "description": "Sudadera negra con estampado de Halcones de Xalapa a color.",
+        "stock": 75,
+        "status": 1,
+        "categorias_id": 19,
+        "updated_date": "2022-11-16T23:10:42.000000Z",
+        "creation_date": "2021-11-13T02:07:25.000000Z",
+        "categorias": {
+            "id": 19,
+            "value": "sudadera",
+            "title": "sudaderas",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 16,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/goXwTTAnmQ.png"
+            },
+            {
+                "name": null,
+                "rel_id": 16,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/TGzd1sUVWi.png"
+            },
+            {
+                "name": null,
+                "rel_id": 16,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/4aGhTKRzc9.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 16,
+                "cant": 27,
+                "value": 9,
+                "cantidad_tallas": 27,
+                "pivot": {
+                    "productos_id": 16,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 16,
+                "cant": 18,
+                "value": 10,
+                "cantidad_tallas": 18,
+                "pivot": {
+                    "productos_id": 16,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 16,
+                "cant": 14,
+                "value": 12,
+                "cantidad_tallas": 14,
+                "pivot": {
+                    "productos_id": 16,
+                    "tallas_id": 12
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 16,
+                "cant": 16,
+                "value": 11,
+                "cantidad_tallas": 16,
+                "pivot": {
+                    "productos_id": 16,
+                    "tallas_id": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "title": "Jersey rosa",
+        "price": 595,
+        "description": "Playera color rosa en cuello V con estampado de Halcones a color.",
+        "stock": 34,
+        "status": 1,
+        "categorias_id": 24,
+        "updated_date": "2022-11-16T23:11:22.000000Z",
+        "creation_date": "2021-11-13T02:23:56.000000Z",
+        "categorias": {
+            "id": 24,
+            "value": "jerseys",
+            "title": "jerseys",
+            "status": 1,
+            "padre_id": 12,
+            "padre": {
+                "id": 12,
+                "value": "mujer",
+                "title": "Mujer",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 18,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/zSVMJO9PA8.png"
+            },
+            {
+                "name": null,
+                "rel_id": 18,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/Yo4bfYhd25.png"
+            },
+            {
+                "name": null,
+                "rel_id": 18,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/BhBVqaXWz4.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 18,
+                "cant": 0,
+                "value": 8,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 18,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 18,
+                "cant": 8,
+                "value": 9,
+                "cantidad_tallas": 8,
+                "pivot": {
+                    "productos_id": 18,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 18,
+                "cant": 11,
+                "value": 10,
+                "cantidad_tallas": 11,
+                "pivot": {
+                    "productos_id": 18,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 18,
+                "cant": 3,
+                "value": 11,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 18,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 18,
+                "cant": 9,
+                "value": 12,
+                "cantidad_tallas": 9,
+                "pivot": {
+                    "productos_id": 18,
+                    "tallas_id": 12
+                }
+            },
+            {
+                "id": 13,
+                "descripcion": "...",
+                "title": "Extra extra grande",
+                "abrev": "XXL",
+                "status": 1,
+                "tallas_id": 13,
+                "productos_id": 18,
+                "cant": 3,
+                "value": 13,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 18,
+                    "tallas_id": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "title": "Jersey negro con manga",
+        "price": 595,
+        "description": "Jersey negro con manga para caballero",
+        "stock": 10,
+        "status": 1,
+        "categorias_id": 16,
+        "updated_date": "2022-11-16T23:15:29.000000Z",
+        "creation_date": "2021-11-13T02:47:29.000000Z",
+        "categorias": {
+            "id": 16,
+            "value": "jerseys",
+            "title": "Jerseys",
+            "status": 1,
+            "padre_id": 9,
+            "padre": {
+                "id": 9,
+                "value": "hombre",
+                "title": "Hombre",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 20,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/FOJ5G9ZcXq.png"
+            },
+            {
+                "name": null,
+                "rel_id": 20,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/Ndpj2qpVmW.png"
+            },
+            {
+                "name": null,
+                "rel_id": 20,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/ilZBNzIyyx.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 20,
+                "cant": 3,
+                "value": 8,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 20,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 20,
+                "cant": 6,
+                "value": 9,
+                "cantidad_tallas": 6,
+                "pivot": {
+                    "productos_id": 20,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 20,
+                "cant": 1,
+                "value": 10,
+                "cantidad_tallas": 1,
+                "pivot": {
+                    "productos_id": 20,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 20,
+                "cant": 0,
+                "value": 11,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 20,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 20,
+                "cant": 0,
+                "value": 12,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 20,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "title": "Jersey blanco con manga",
+        "price": 595,
+        "description": "Jersey blanco con manga para caballero",
+        "stock": 38,
+        "status": 1,
+        "categorias_id": 16,
+        "updated_date": "2022-11-16T23:15:58.000000Z",
+        "creation_date": "2021-11-13T23:04:27.000000Z",
+        "categorias": {
+            "id": 16,
+            "value": "jerseys",
+            "title": "Jerseys",
+            "status": 1,
+            "padre_id": 9,
+            "padre": {
+                "id": 9,
+                "value": "hombre",
+                "title": "Hombre",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 21,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/ycEjCbd1au.png"
+            },
+            {
+                "name": null,
+                "rel_id": 21,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/cjLQtWAmsy.png"
+            },
+            {
+                "name": null,
+                "rel_id": 21,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/vVc7nTNkLa.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 21,
+                "cant": 19,
+                "value": 8,
+                "cantidad_tallas": 19,
+                "pivot": {
+                    "productos_id": 21,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 21,
+                "cant": 16,
+                "value": 9,
+                "cantidad_tallas": 16,
+                "pivot": {
+                    "productos_id": 21,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 21,
+                "cant": 0,
+                "value": 10,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 21,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 21,
+                "cant": 0,
+                "value": 12,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 21,
+                    "tallas_id": 12
+                }
+            },
+            {
+                "id": 13,
+                "descripcion": "...",
+                "title": "Extra extra grande",
+                "abrev": "XXL",
+                "status": 1,
+                "tallas_id": 13,
+                "productos_id": 21,
+                "cant": 0,
+                "value": 13,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 21,
+                    "tallas_id": 13
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 21,
+                "cant": 3,
+                "value": 11,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 21,
+                    "tallas_id": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "title": "Jersey dama",
+        "price": 595,
+        "description": "Jersey blanco con manga para dama cuello v",
+        "stock": 26,
+        "status": 1,
+        "categorias_id": 24,
+        "updated_date": "2022-11-16T23:16:14.000000Z",
+        "creation_date": "2021-11-20T18:08:23.000000Z",
+        "categorias": {
+            "id": 24,
+            "value": "jerseys",
+            "title": "jerseys",
+            "status": 1,
+            "padre_id": 12,
+            "padre": {
+                "id": 12,
+                "value": "mujer",
+                "title": "Mujer",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 22,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/EHhVj59qlS.png"
+            },
+            {
+                "name": null,
+                "rel_id": 22,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/Fq7Gb1wFiu.png"
+            },
+            {
+                "name": null,
+                "rel_id": 22,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/dZ83hgz3PS.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 22,
+                "cant": 5,
+                "value": 8,
+                "cantidad_tallas": 5,
+                "pivot": {
+                    "productos_id": 22,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 22,
+                "cant": 7,
+                "value": 9,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 22,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 22,
+                "cant": 1,
+                "value": 10,
+                "cantidad_tallas": 1,
+                "pivot": {
+                    "productos_id": 22,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 22,
+                "cant": 2,
+                "value": 11,
+                "cantidad_tallas": 2,
+                "pivot": {
+                    "productos_id": 22,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 22,
+                "cant": 7,
+                "value": 12,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 22,
+                    "tallas_id": 12
+                }
+            },
+            {
+                "id": 13,
+                "descripcion": "...",
+                "title": "Extra extra grande",
+                "abrev": "XXL",
+                "status": 1,
+                "tallas_id": 13,
+                "productos_id": 22,
+                "cant": 4,
+                "value": 13,
+                "cantidad_tallas": 4,
+                "pivot": {
+                    "productos_id": 22,
+                    "tallas_id": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "title": "Jersey negro dama",
+        "price": 595,
+        "description": "Jersey negro con manga para dama",
+        "stock": 32,
+        "status": 1,
+        "categorias_id": 24,
+        "updated_date": "2022-11-16T23:16:30.000000Z",
+        "creation_date": "2021-11-22T16:28:49.000000Z",
+        "categorias": {
+            "id": 24,
+            "value": "jerseys",
+            "title": "jerseys",
+            "status": 1,
+            "padre_id": 12,
+            "padre": {
+                "id": 12,
+                "value": "mujer",
+                "title": "Mujer",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 23,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/kGDjBQV3z7.png"
+            },
+            {
+                "name": null,
+                "rel_id": 23,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/6voZombrDL.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 23,
+                "cant": 5,
+                "value": 8,
+                "cantidad_tallas": 5,
+                "pivot": {
+                    "productos_id": 23,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 23,
+                "cant": 11,
+                "value": 9,
+                "cantidad_tallas": 11,
+                "pivot": {
+                    "productos_id": 23,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 23,
+                "cant": 0,
+                "value": 10,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 23,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 23,
+                "cant": 5,
+                "value": 11,
+                "cantidad_tallas": 5,
+                "pivot": {
+                    "productos_id": 23,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 23,
+                "cant": 4,
+                "value": 12,
+                "cantidad_tallas": 4,
+                "pivot": {
+                    "productos_id": 23,
+                    "tallas_id": 12
+                }
+            },
+            {
+                "id": 13,
+                "descripcion": "...",
+                "title": "Extra extra grande",
+                "abrev": "XXL",
+                "status": 1,
+                "tallas_id": 13,
+                "productos_id": 23,
+                "cant": 7,
+                "value": 13,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 23,
+                    "tallas_id": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "title": "Bermuda gris",
+        "price": 300,
+        "description": "Bermuda gris",
+        "stock": 32,
+        "status": 1,
+        "categorias_id": 17,
+        "updated_date": "2022-11-16T23:17:01.000000Z",
+        "creation_date": "2021-11-22T16:29:57.000000Z",
+        "categorias": {
+            "id": 17,
+            "value": "bermudas",
+            "title": "bermudas",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 24,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/BhWJm8xtf4.png"
+            },
+            {
+                "name": null,
+                "rel_id": 24,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/hSqbOqnzaZ.png"
+            },
+            {
+                "name": null,
+                "rel_id": 24,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/zM5dfnegWx.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 24,
+                "cant": 0,
+                "value": 8,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 24,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 24,
+                "cant": 2,
+                "value": 9,
+                "cantidad_tallas": 2,
+                "pivot": {
+                    "productos_id": 24,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 24,
+                "cant": 14,
+                "value": 10,
+                "cantidad_tallas": 14,
+                "pivot": {
+                    "productos_id": 24,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 24,
+                "cant": 15,
+                "value": 11,
+                "cantidad_tallas": 15,
+                "pivot": {
+                    "productos_id": 24,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 24,
+                "cant": 1,
+                "value": 12,
+                "cantidad_tallas": 1,
+                "pivot": {
+                    "productos_id": 24,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "title": "Jersey Oficial",
+        "price": 595,
+        "description": "Jersey oficial blanco sin mangas",
+        "stock": 66,
+        "status": 1,
+        "categorias_id": 23,
+        "updated_date": "2022-11-16T23:17:22.000000Z",
+        "creation_date": "2021-11-22T16:37:51.000000Z",
+        "categorias": {
+            "id": 23,
+            "value": "jerseys",
+            "title": "jerseys",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 25,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/NSVkvD56PL.png"
+            },
+            {
+                "name": null,
+                "rel_id": 25,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/JTAX1ffk0L.png"
+            },
+            {
+                "name": null,
+                "rel_id": 25,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/1m7SkvrMT5.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 25,
+                "cant": 17,
+                "value": 8,
+                "cantidad_tallas": 17,
+                "pivot": {
+                    "productos_id": 25,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 25,
+                "cant": 17,
+                "value": 9,
+                "cantidad_tallas": 17,
+                "pivot": {
+                    "productos_id": 25,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 25,
+                "cant": 8,
+                "value": 10,
+                "cantidad_tallas": 8,
+                "pivot": {
+                    "productos_id": 25,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 25,
+                "cant": 12,
+                "value": 11,
+                "cantidad_tallas": 12,
+                "pivot": {
+                    "productos_id": 25,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 25,
+                "cant": 4,
+                "value": 12,
+                "cantidad_tallas": 4,
+                "pivot": {
+                    "productos_id": 25,
+                    "tallas_id": 12
+                }
+            },
+            {
+                "id": 13,
+                "descripcion": "...",
+                "title": "Extra extra grande",
+                "abrev": "XXL",
+                "status": 1,
+                "tallas_id": 13,
+                "productos_id": 25,
+                "cant": 8,
+                "value": 13,
+                "cantidad_tallas": 8,
+                "pivot": {
+                    "productos_id": 25,
+                    "tallas_id": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "title": "Jersey oficial Morado",
+        "price": 595,
+        "description": "Jersey oficial morado",
+        "stock": 55,
+        "status": 1,
+        "categorias_id": 23,
+        "updated_date": "2022-11-16T23:17:42.000000Z",
+        "creation_date": "2021-11-22T17:32:14.000000Z",
+        "categorias": {
+            "id": 23,
+            "value": "jerseys",
+            "title": "jerseys",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 26,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/6jJg5zJsGR.png"
+            },
+            {
+                "name": null,
+                "rel_id": 26,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/Z66MHo9pqh.png"
+            },
+            {
+                "name": null,
+                "rel_id": 26,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/USJAsIOJl2.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 26,
+                "cant": 17,
+                "value": 8,
+                "cantidad_tallas": 17,
+                "pivot": {
+                    "productos_id": 26,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 26,
+                "cant": 14,
+                "value": 9,
+                "cantidad_tallas": 14,
+                "pivot": {
+                    "productos_id": 26,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 26,
+                "cant": 8,
+                "value": 10,
+                "cantidad_tallas": 8,
+                "pivot": {
+                    "productos_id": 26,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 26,
+                "cant": 6,
+                "value": 11,
+                "cantidad_tallas": 6,
+                "pivot": {
+                    "productos_id": 26,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 26,
+                "cant": 3,
+                "value": 12,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 26,
+                    "tallas_id": 12
+                }
+            },
+            {
+                "id": 13,
+                "descripcion": "...",
+                "title": "Extra extra grande",
+                "abrev": "XXL",
+                "status": 1,
+                "tallas_id": 13,
+                "productos_id": 26,
+                "cant": 7,
+                "value": 13,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 26,
+                    "tallas_id": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "title": "Jersey rosa",
+        "price": 595,
+        "description": "Playera rosa cuello redondo.",
+        "stock": 9,
+        "status": 1,
+        "categorias_id": 16,
+        "updated_date": "2022-11-16T23:18:01.000000Z",
+        "creation_date": "2021-11-22T20:21:56.000000Z",
+        "categorias": {
+            "id": 16,
+            "value": "jerseys",
+            "title": "Jerseys",
+            "status": 1,
+            "padre_id": 9,
+            "padre": {
+                "id": 9,
+                "value": "hombre",
+                "title": "Hombre",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 29,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/xkv0v0al6z.png"
+            },
+            {
+                "name": null,
+                "rel_id": 29,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/gYFwTdDYBU.png"
+            },
+            {
+                "name": null,
+                "rel_id": 29,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/vqOReRX51T.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 29,
+                "cant": 3,
+                "value": 8,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 29,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 29,
+                "cant": 6,
+                "value": 9,
+                "cantidad_tallas": 6,
+                "pivot": {
+                    "productos_id": 29,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 29,
+                "cant": 0,
+                "value": 10,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 29,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 29,
+                "cant": 0,
+                "value": 11,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 29,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 29,
+                "cant": 0,
+                "value": 12,
+                "cantidad_tallas": 0,
+                "pivot": {
+                    "productos_id": 29,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "title": "Bermuda negra",
+        "price": 300,
+        "description": "...",
+        "stock": 95,
+        "status": 1,
+        "categorias_id": 17,
+        "updated_date": "2022-11-16T23:18:28.000000Z",
+        "creation_date": "2021-11-22T22:54:52.000000Z",
+        "categorias": {
+            "id": 17,
+            "value": "bermudas",
+            "title": "bermudas",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 32,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/O0QEAo4NHl.png"
+            },
+            {
+                "name": null,
+                "rel_id": 32,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/HOxgHUb811.png"
+            },
+            {
+                "name": null,
+                "rel_id": 32,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/zEYLT3Mcwb.png"
+            },
+            {
+                "name": null,
+                "rel_id": 32,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/dzJWbxogVG.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 32,
+                "cant": 19,
+                "value": 8,
+                "cantidad_tallas": 19,
+                "pivot": {
+                    "productos_id": 32,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 32,
+                "cant": 29,
+                "value": 9,
+                "cantidad_tallas": 29,
+                "pivot": {
+                    "productos_id": 32,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 32,
+                "cant": 27,
+                "value": 10,
+                "cantidad_tallas": 27,
+                "pivot": {
+                    "productos_id": 32,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 32,
+                "cant": 20,
+                "value": 11,
+                "cantidad_tallas": 20,
+                "pivot": {
+                    "productos_id": 32,
+                    "tallas_id": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "title": "Sudadera gris logo a color",
+        "price": 450,
+        "description": "Sudadera gris logo a  color.",
+        "stock": 88,
+        "status": 1,
+        "categorias_id": 19,
+        "updated_date": "2022-11-16T23:18:50.000000Z",
+        "creation_date": "2022-01-07T18:11:50.000000Z",
+        "categorias": {
+            "id": 19,
+            "value": "sudadera",
+            "title": "sudaderas",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": null,
+                "rel_id": 33,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/YGnsVPfSub.png"
+            },
+            {
+                "name": null,
+                "rel_id": 33,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/HVehBASK7g.png"
+            },
+            {
+                "name": null,
+                "rel_id": 33,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/VK3jHADTV2.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 33,
+                "cant": 27,
+                "value": 9,
+                "cantidad_tallas": 27,
+                "pivot": {
+                    "productos_id": 33,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 33,
+                "cant": 26,
+                "value": 10,
+                "cantidad_tallas": 26,
+                "pivot": {
+                    "productos_id": 33,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 33,
+                "cant": 15,
+                "value": 11,
+                "cantidad_tallas": 15,
+                "pivot": {
+                    "productos_id": 33,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 33,
+                "cant": 20,
+                "value": 12,
+                "cantidad_tallas": 20,
+                "pivot": {
+                    "productos_id": 33,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "title": "JERSEY NEGRO FEMENIL",
+        "price": 450,
+        "description": "MANGA LARGA",
+        "stock": 63,
+        "status": 1,
+        "categorias_id": 23,
+        "updated_date": "2022-11-16T23:19:15.000000Z",
+        "creation_date": "2022-05-17T18:46:04.000000Z",
+        "categorias": {
+            "id": 23,
+            "value": "jerseys",
+            "title": "jerseys",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "wlEOjJWa4FP.jpeg",
+                "rel_id": 37,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/wlEOjJWa4FP.jpeg"
+            },
+            {
+                "name": "EC0T760hEZz.jpeg",
+                "rel_id": 37,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/EC0T760hEZz.jpeg"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 37,
+                "cant": 4,
+                "value": 8,
+                "cantidad_tallas": 4,
+                "pivot": {
+                    "productos_id": 37,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 37,
+                "cant": 18,
+                "value": 9,
+                "cantidad_tallas": 18,
+                "pivot": {
+                    "productos_id": 37,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 37,
+                "cant": 13,
+                "value": 10,
+                "cantidad_tallas": 13,
+                "pivot": {
+                    "productos_id": 37,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 37,
+                "cant": 16,
+                "value": 11,
+                "cantidad_tallas": 16,
+                "pivot": {
+                    "productos_id": 37,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 37,
+                "cant": 12,
+                "value": 12,
+                "cantidad_tallas": 12,
+                "pivot": {
+                    "productos_id": 37,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "title": "JERSEY AZUL MARINO",
+        "price": 450,
+        "description": "FEMENIL",
+        "stock": 107,
+        "status": 1,
+        "categorias_id": 16,
+        "updated_date": "2022-11-16T23:19:37.000000Z",
+        "creation_date": "2022-05-17T19:05:26.000000Z",
+        "categorias": {
+            "id": 16,
+            "value": "jerseys",
+            "title": "Jerseys",
+            "status": 1,
+            "padre_id": 9,
+            "padre": {
+                "id": 9,
+                "value": "hombre",
+                "title": "Hombre",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "W8brFrkZfVb.jpeg",
+                "rel_id": 38,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/W8brFrkZfVb.jpeg"
+            },
+            {
+                "name": "hNic1JcBdpX.jpeg",
+                "rel_id": 38,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/hNic1JcBdpX.jpeg"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 38,
+                "cant": 8,
+                "value": 8,
+                "cantidad_tallas": 8,
+                "pivot": {
+                    "productos_id": 38,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 38,
+                "cant": 25,
+                "value": 9,
+                "cantidad_tallas": 25,
+                "pivot": {
+                    "productos_id": 38,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 38,
+                "cant": 27,
+                "value": 10,
+                "cantidad_tallas": 27,
+                "pivot": {
+                    "productos_id": 38,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 38,
+                "cant": 24,
+                "value": 11,
+                "cantidad_tallas": 24,
+                "pivot": {
+                    "productos_id": 38,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 38,
+                "cant": 23,
+                "value": 12,
+                "cantidad_tallas": 23,
+                "pivot": {
+                    "productos_id": 38,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "title": "JERSEY MORADO FEMENIL",
+        "price": 450,
+        "description": "FEMENIL",
+        "stock": 106,
+        "status": 1,
+        "categorias_id": 13,
+        "updated_date": "2022-11-16T23:19:59.000000Z",
+        "creation_date": "2022-05-17T19:08:21.000000Z",
+        "categorias": {
+            "id": 13,
+            "value": "playeras",
+            "title": "playeras",
+            "status": 1,
+            "padre_id": 12,
+            "padre": {
+                "id": 12,
+                "value": "mujer",
+                "title": "Mujer",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "s0Nh4eyeW6s.jpeg",
+                "rel_id": 39,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/s0Nh4eyeW6s.jpeg"
+            },
+            {
+                "name": "Fy88hKyq2AP.jpeg",
+                "rel_id": 39,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/Fy88hKyq2AP.jpeg"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 39,
+                "cant": 7,
+                "value": 8,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 39,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 39,
+                "cant": 27,
+                "value": 9,
+                "cantidad_tallas": 27,
+                "pivot": {
+                    "productos_id": 39,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 39,
+                "cant": 27,
+                "value": 10,
+                "cantidad_tallas": 27,
+                "pivot": {
+                    "productos_id": 39,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 39,
+                "cant": 22,
+                "value": 11,
+                "cantidad_tallas": 22,
+                "pivot": {
+                    "productos_id": 39,
+                    "tallas_id": 11
+                }
+            },
+            {
+                "id": 12,
+                "descripcion": "...",
+                "title": "Extra grande",
+                "abrev": "XL",
+                "status": 1,
+                "tallas_id": 12,
+                "productos_id": 39,
+                "cant": 23,
+                "value": 12,
+                "cantidad_tallas": 23,
+                "pivot": {
+                    "productos_id": 39,
+                    "tallas_id": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "title": "Vicera",
+        "price": 435,
+        "description": "Gorra",
+        "stock": 3,
+        "status": 1,
+        "categorias_id": 28,
+        "updated_date": "2022-11-16T23:20:25.000000Z",
+        "creation_date": "2022-10-10T15:06:11.000000Z",
+        "categorias": {
+            "id": 28,
+            "value": "gorras",
+            "title": "Gorras",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "PMjUOwrA1Ai.png",
+                "rel_id": 40,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/PMjUOwrA1Ai.png"
+            },
+            {
+                "name": "xGJTiHB9gqW.png",
+                "rel_id": 40,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/xGJTiHB9gqW.png"
+            },
+            {
+                "name": "lk04Q6zdjTn.png",
+                "rel_id": 40,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/lk04Q6zdjTn.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 15,
+                "descripcion": "unitalla",
+                "title": "unitalla",
+                "abrev": "unitalla",
+                "status": 1,
+                "tallas_id": 15,
+                "productos_id": 40,
+                "cant": 3,
+                "value": 15,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 40,
+                    "tallas_id": 15
+                }
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "title": "Gorra temporada Varonil",
+        "price": 585,
+        "description": "Gorra con logo",
+        "stock": 15,
+        "status": 1,
+        "categorias_id": 28,
+        "updated_date": "2022-11-16T23:20:48.000000Z",
+        "creation_date": "2022-10-10T15:10:26.000000Z",
+        "categorias": {
+            "id": 28,
+            "value": "gorras",
+            "title": "Gorras",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "VcxTQfzoOM1.png",
+                "rel_id": 41,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/VcxTQfzoOM1.png"
+            },
+            {
+                "name": "ZC2QyS7wova.png",
+                "rel_id": 41,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/ZC2QyS7wova.png"
+            },
+            {
+                "name": "evVgEqg6mm9.png",
+                "rel_id": 41,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/evVgEqg6mm9.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 41,
+                "cant": 9,
+                "value": 10,
+                "cantidad_tallas": 9,
+                "pivot": {
+                    "productos_id": 41,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 41,
+                "cant": 6,
+                "value": 11,
+                "cantidad_tallas": 6,
+                "pivot": {
+                    "productos_id": 41,
+                    "tallas_id": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "title": "Gorra temporada Femenil",
+        "price": 585,
+        "description": "Gorra HALCONES",
+        "stock": 28,
+        "status": 1,
+        "categorias_id": 28,
+        "updated_date": "2022-11-16T23:22:14.000000Z",
+        "creation_date": "2022-10-10T15:45:55.000000Z",
+        "categorias": {
+            "id": 28,
+            "value": "gorras",
+            "title": "Gorras",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "L3S0yyxBJ71.png",
+                "rel_id": 42,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/L3S0yyxBJ71.png"
+            },
+            {
+                "name": "vK7C2YSP9pA.png",
+                "rel_id": 42,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/vK7C2YSP9pA.png"
+            },
+            {
+                "name": "c3q1NMPvP9F.png",
+                "rel_id": 42,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/c3q1NMPvP9F.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 42,
+                "cant": 12,
+                "value": 10,
+                "cantidad_tallas": 12,
+                "pivot": {
+                    "productos_id": 42,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 42,
+                "cant": 16,
+                "value": 11,
+                "cantidad_tallas": 16,
+                "pivot": {
+                    "productos_id": 42,
+                    "tallas_id": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "title": "Gorra NEGRA",
+        "price": 585,
+        "description": "Gorra UNITALLA",
+        "stock": 4,
+        "status": 1,
+        "categorias_id": 28,
+        "updated_date": "2022-11-16T23:23:04.000000Z",
+        "creation_date": "2022-10-10T15:52:41.000000Z",
+        "categorias": {
+            "id": 28,
+            "value": "gorras",
+            "title": "Gorras",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "xkde2zcJECL.png",
+                "rel_id": 43,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/xkde2zcJECL.png"
+            },
+            {
+                "name": "u2BXpi2i13x.png",
+                "rel_id": 43,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/u2BXpi2i13x.png"
+            },
+            {
+                "name": "l9aiwnUcXYE.png",
+                "rel_id": 43,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/l9aiwnUcXYE.png"
+            },
+            {
+                "name": "2Bn32eZYaKT.png",
+                "rel_id": 43,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/2Bn32eZYaKT.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 15,
+                "descripcion": "unitalla",
+                "title": "unitalla",
+                "abrev": "unitalla",
+                "status": 1,
+                "tallas_id": 15,
+                "productos_id": 43,
+                "cant": 4,
+                "value": 15,
+                "cantidad_tallas": 4,
+                "pivot": {
+                    "productos_id": 43,
+                    "tallas_id": 15
+                }
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "title": "Termo YETI azul",
+        "price": 635,
+        "description": "Termo azul HALCONES. Acabado brillante.",
+        "stock": 1,
+        "status": 1,
+        "categorias_id": 29,
+        "updated_date": "2022-11-16T23:23:42.000000Z",
+        "creation_date": "2022-10-10T15:57:42.000000Z",
+        "categorias": {
+            "id": 29,
+            "value": "termos",
+            "title": "Termos",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "ju2GrOk9IaS.png",
+                "rel_id": 44,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/ju2GrOk9IaS.png"
+            },
+            {
+                "name": "H2xnDGPzryS.png",
+                "rel_id": 44,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/H2xnDGPzryS.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 14,
+                "descripcion": "Medida para los termos",
+                "title": "600ml",
+                "abrev": "600ml",
+                "status": 1,
+                "tallas_id": 14,
+                "productos_id": 44,
+                "cant": 1,
+                "value": 14,
+                "cantidad_tallas": 1,
+                "pivot": {
+                    "productos_id": 44,
+                    "tallas_id": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "title": "Termo YETI negro",
+        "price": 635,
+        "description": "Termo negro HALCONES",
+        "stock": 1,
+        "status": 1,
+        "categorias_id": 29,
+        "updated_date": "2022-11-16T23:24:08.000000Z",
+        "creation_date": "2022-10-10T15:58:51.000000Z",
+        "categorias": {
+            "id": 29,
+            "value": "termos",
+            "title": "Termos",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "J3lUNTjxcsN.png",
+                "rel_id": 45,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/J3lUNTjxcsN.png"
+            },
+            {
+                "name": "aA3RtRNNEiA.png",
+                "rel_id": 45,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/aA3RtRNNEiA.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 14,
+                "descripcion": "Medida para los termos",
+                "title": "600ml",
+                "abrev": "600ml",
+                "status": 1,
+                "tallas_id": 14,
+                "productos_id": 45,
+                "cant": 1,
+                "value": 14,
+                "cantidad_tallas": 1,
+                "pivot": {
+                    "productos_id": 45,
+                    "tallas_id": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "title": "Termo YETI blanco",
+        "price": 635,
+        "description": "Termo blanco HALCONES. Acabado brillante.",
+        "stock": 2,
+        "status": 1,
+        "categorias_id": 29,
+        "updated_date": "2022-11-16T23:24:24.000000Z",
+        "creation_date": "2022-10-10T15:59:52.000000Z",
+        "categorias": {
+            "id": 29,
+            "value": "termos",
+            "title": "Termos",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "s5tZK5gqMzx.png",
+                "rel_id": 46,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/s5tZK5gqMzx.png"
+            },
+            {
+                "name": "ww6J226r0zw.png",
+                "rel_id": 46,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/ww6J226r0zw.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 14,
+                "descripcion": "Medida para los termos",
+                "title": "600ml",
+                "abrev": "600ml",
+                "status": 1,
+                "tallas_id": 14,
+                "productos_id": 46,
+                "cant": 2,
+                "value": 14,
+                "cantidad_tallas": 2,
+                "pivot": {
+                    "productos_id": 46,
+                    "tallas_id": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "title": "Termo YETI blanco",
+        "price": 635,
+        "description": "Termo blanco LOGO. Acabado brillante.",
+        "stock": 3,
+        "status": 1,
+        "categorias_id": 29,
+        "updated_date": "2022-11-16T23:24:43.000000Z",
+        "creation_date": "2022-10-10T16:01:06.000000Z",
+        "categorias": {
+            "id": 29,
+            "value": "termos",
+            "title": "Termos",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "I5H6QvLoWEf.png",
+                "rel_id": 47,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/I5H6QvLoWEf.png"
+            },
+            {
+                "name": "3LYya1GtZkY.png",
+                "rel_id": 47,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/3LYya1GtZkY.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 14,
+                "descripcion": "Medida para los termos",
+                "title": "600ml",
+                "abrev": "600ml",
+                "status": 1,
+                "tallas_id": 14,
+                "productos_id": 47,
+                "cant": 3,
+                "value": 14,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 47,
+                    "tallas_id": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "title": "Termo YETI morado",
+        "price": 635,
+        "description": "Termo morado LOGO,  acabado brillante.",
+        "stock": 3,
+        "status": 1,
+        "categorias_id": 29,
+        "updated_date": "2022-11-16T23:25:02.000000Z",
+        "creation_date": "2022-10-10T16:04:49.000000Z",
+        "categorias": {
+            "id": 29,
+            "value": "termos",
+            "title": "Termos",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "9YV97SMSos0.png",
+                "rel_id": 48,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/9YV97SMSos0.png"
+            },
+            {
+                "name": "vYGvwcIsXEk.png",
+                "rel_id": 48,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/vYGvwcIsXEk.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 14,
+                "descripcion": "Medida para los termos",
+                "title": "600ml",
+                "abrev": "600ml",
+                "status": 1,
+                "tallas_id": 14,
+                "productos_id": 48,
+                "cant": 3,
+                "value": 14,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 48,
+                    "tallas_id": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "title": "Termo YETI lila",
+        "price": 635,
+        "description": "Termo lila Halcones.",
+        "stock": 1,
+        "status": 1,
+        "categorias_id": 29,
+        "updated_date": "2022-11-16T23:25:22.000000Z",
+        "creation_date": "2022-10-10T16:06:10.000000Z",
+        "categorias": {
+            "id": 29,
+            "value": "termos",
+            "title": "Termos",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "UI5DlSAOJ95.png",
+                "rel_id": 49,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/UI5DlSAOJ95.png"
+            },
+            {
+                "name": "c3k5qVu5OiF.png",
+                "rel_id": 49,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/c3k5qVu5OiF.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 14,
+                "descripcion": "Medida para los termos",
+                "title": "600ml",
+                "abrev": "600ml",
+                "status": 1,
+                "tallas_id": 14,
+                "productos_id": 49,
+                "cant": 1,
+                "value": 14,
+                "cantidad_tallas": 1,
+                "pivot": {
+                    "productos_id": 49,
+                    "tallas_id": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "title": "Termo YETI rosa",
+        "price": 635,
+        "description": "Termo rosa LOGO.",
+        "stock": 1,
+        "status": 1,
+        "categorias_id": 29,
+        "updated_date": "2022-11-16T23:25:42.000000Z",
+        "creation_date": "2022-10-10T16:07:06.000000Z",
+        "categorias": {
+            "id": 29,
+            "value": "termos",
+            "title": "Termos",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "Z6OcmJyB78b.png",
+                "rel_id": 50,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/Z6OcmJyB78b.png"
+            },
+            {
+                "name": "0UEJ715OMW1.png",
+                "rel_id": 50,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/0UEJ715OMW1.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 14,
+                "descripcion": "Medida para los termos",
+                "title": "600ml",
+                "abrev": "600ml",
+                "status": 1,
+                "tallas_id": 14,
+                "productos_id": 50,
+                "cant": 1,
+                "value": 14,
+                "cantidad_tallas": 1,
+                "pivot": {
+                    "productos_id": 50,
+                    "tallas_id": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "title": "Termo YETI rosa",
+        "price": 635,
+        "description": "Termo rosa HALCONES.",
+        "stock": 1,
+        "status": 1,
+        "categorias_id": 29,
+        "updated_date": "2022-11-16T23:26:04.000000Z",
+        "creation_date": "2022-10-10T16:07:57.000000Z",
+        "categorias": {
+            "id": 29,
+            "value": "termos",
+            "title": "Termos",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "l2xQ0kclTU9.png",
+                "rel_id": 51,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/l2xQ0kclTU9.png"
+            },
+            {
+                "name": "MjcSSRvvE3m.png",
+                "rel_id": 51,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/MjcSSRvvE3m.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 14,
+                "descripcion": "Medida para los termos",
+                "title": "600ml",
+                "abrev": "600ml",
+                "status": 1,
+                "tallas_id": 14,
+                "productos_id": 51,
+                "cant": 1,
+                "value": 14,
+                "cantidad_tallas": 1,
+                "pivot": {
+                    "productos_id": 51,
+                    "tallas_id": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 52,
+        "title": "Gorra  Temporada varonil",
+        "price": 585,
+        "description": "Gorra Halcones temp. varonil",
+        "stock": 6,
+        "status": 1,
+        "categorias_id": 28,
+        "updated_date": "2022-11-16T23:26:33.000000Z",
+        "creation_date": "2022-10-20T21:47:15.000000Z",
+        "categorias": {
+            "id": 28,
+            "value": "gorras",
+            "title": "Gorras",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "T22JAEOO7TS.png",
+                "rel_id": 52,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/T22JAEOO7TS.png"
+            },
+            {
+                "name": "7W496ryI7gv.png",
+                "rel_id": 52,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/7W496ryI7gv.png"
+            },
+            {
+                "name": "RZgACwVvmQm.png",
+                "rel_id": 52,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/RZgACwVvmQm.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 15,
+                "descripcion": "unitalla",
+                "title": "unitalla",
+                "abrev": "unitalla",
+                "status": 1,
+                "tallas_id": 15,
+                "productos_id": 52,
+                "cant": 6,
+                "value": 15,
+                "cantidad_tallas": 6,
+                "pivot": {
+                    "productos_id": 52,
+                    "tallas_id": 15
+                }
+            }
+        ]
+    },
+    {
+        "id": 53,
+        "title": "Termo morado 3",
+        "price": 635,
+        "description": "Termo morado modelo 3 con logotipo de Halcones",
+        "stock": 1,
+        "status": 1,
+        "categorias_id": 29,
+        "updated_date": "2022-11-16T23:27:00.000000Z",
+        "creation_date": "2022-10-21T15:49:59.000000Z",
+        "categorias": {
+            "id": 29,
+            "value": "termos",
+            "title": "Termos",
+            "status": 1,
+            "padre_id": 27,
+            "padre": {
+                "id": 27,
+                "value": "accesorios",
+                "title": "Accesorios",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "mNUIQ3c6xr2.png",
+                "rel_id": 53,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/mNUIQ3c6xr2.png"
+            },
+            {
+                "name": "0AKQTuibLWW.png",
+                "rel_id": 53,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/0AKQTuibLWW.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 14,
+                "descripcion": "Medida para los termos",
+                "title": "600ml",
+                "abrev": "600ml",
+                "status": 1,
+                "tallas_id": 14,
+                "productos_id": 53,
+                "cant": 1,
+                "value": 14,
+                "cantidad_tallas": 1,
+                "pivot": {
+                    "productos_id": 53,
+                    "tallas_id": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 54,
+        "title": "Jersey varonil 2022",
+        "price": 595,
+        "description": "Jersey BLANCO",
+        "stock": 31,
+        "status": 1,
+        "categorias_id": 23,
+        "updated_date": "2022-11-16T23:27:54.000000Z",
+        "creation_date": "2022-11-07T19:07:58.000000Z",
+        "categorias": {
+            "id": 23,
+            "value": "jerseys",
+            "title": "jerseys",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "tIy5QOwG7Kj.png",
+                "rel_id": 54,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/tIy5QOwG7Kj.png"
+            },
+            {
+                "name": "aCkeyuPkrlj.png",
+                "rel_id": 54,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/aCkeyuPkrlj.png"
+            },
+            {
+                "name": "KixkN9AUAz9.png",
+                "rel_id": 54,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/KixkN9AUAz9.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 54,
+                "cant": 9,
+                "value": 9,
+                "cantidad_tallas": 9,
+                "pivot": {
+                    "productos_id": 54,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 54,
+                "cant": 4,
+                "value": 8,
+                "cantidad_tallas": 4,
+                "pivot": {
+                    "productos_id": 54,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 54,
+                "cant": 11,
+                "value": 10,
+                "cantidad_tallas": 11,
+                "pivot": {
+                    "productos_id": 54,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 54,
+                "cant": 7,
+                "value": 11,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 54,
+                    "tallas_id": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 55,
+        "title": "Jersey Varonil 2022",
+        "price": 595,
+        "description": "Jersey MORADO",
+        "stock": 26,
+        "status": 1,
+        "categorias_id": 23,
+        "updated_date": "2022-11-22T05:21:02.000000Z",
+        "creation_date": "2022-11-07T19:10:40.000000Z",
+        "categorias": {
+            "id": 23,
+            "value": "jerseys",
+            "title": "jerseys",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "YMEaNxnHyQj.png",
+                "rel_id": 55,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/YMEaNxnHyQj.png"
+            },
+            {
+                "name": "9Lo4lJOBcYq.png",
+                "rel_id": 55,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/9Lo4lJOBcYq.png"
+            },
+            {
+                "name": "2GDvUJLmfPO.png",
+                "rel_id": 55,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/2GDvUJLmfPO.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 55,
+                "cant": 7,
+                "value": 9,
+                "cantidad_tallas": 7,
+                "pivot": {
+                    "productos_id": 55,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 55,
+                "cant": 5,
+                "value": 8,
+                "cantidad_tallas": 5,
+                "pivot": {
+                    "productos_id": 55,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 55,
+                "cant": 10,
+                "value": 10,
+                "cantidad_tallas": 10,
+                "pivot": {
+                    "productos_id": 55,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 55,
+                "cant": 4,
+                "value": 11,
+                "cantidad_tallas": 4,
+                "pivot": {
+                    "productos_id": 55,
+                    "tallas_id": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 56,
+        "title": "Jersey Varonil 2022",
+        "price": 595,
+        "description": "Jersey NEGRO",
+        "stock": 22,
+        "status": 1,
+        "categorias_id": 23,
+        "updated_date": "2022-11-16T23:29:19.000000Z",
+        "creation_date": "2022-11-07T19:15:19.000000Z",
+        "categorias": {
+            "id": 23,
+            "value": "jerseys",
+            "title": "jerseys",
+            "status": 1,
+            "padre_id": 14,
+            "padre": {
+                "id": 14,
+                "value": "unisex",
+                "title": "Unisex",
+                "status": 1,
+                "padre_id": null
+            }
+        },
+        "images": [
+            {
+                "name": "n5ngmZfDSIc.png",
+                "rel_id": 56,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/n5ngmZfDSIc.png"
+            },
+            {
+                "name": "67ZdHNO5ZK4.png",
+                "rel_id": 56,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/67ZdHNO5ZK4.png"
+            },
+            {
+                "name": "rMZtMNRPlCH.png",
+                "rel_id": 56,
+                "rel_type": "productos",
+                "uri_path": "\/productos\/rMZtMNRPlCH.png"
+            }
+        ],
+        "tallas_f": [
+            {
+                "id": 9,
+                "descripcion": "...",
+                "title": "Chica",
+                "abrev": "S",
+                "status": 1,
+                "tallas_id": 9,
+                "productos_id": 56,
+                "cant": 3,
+                "value": 9,
+                "cantidad_tallas": 3,
+                "pivot": {
+                    "productos_id": 56,
+                    "tallas_id": 9
+                }
+            },
+            {
+                "id": 8,
+                "descripcion": "...",
+                "title": "Extra chica",
+                "abrev": "XS",
+                "status": 1,
+                "tallas_id": 8,
+                "productos_id": 56,
+                "cant": 4,
+                "value": 8,
+                "cantidad_tallas": 4,
+                "pivot": {
+                    "productos_id": 56,
+                    "tallas_id": 8
+                }
+            },
+            {
+                "id": 10,
+                "descripcion": "...",
+                "title": "Mediana",
+                "abrev": "M",
+                "status": 1,
+                "tallas_id": 10,
+                "productos_id": 56,
+                "cant": 13,
+                "value": 10,
+                "cantidad_tallas": 13,
+                "pivot": {
+                    "productos_id": 56,
+                    "tallas_id": 10
+                }
+            },
+            {
+                "id": 11,
+                "descripcion": "...",
+                "title": "Grande",
+                "abrev": "L",
+                "status": 1,
+                "tallas_id": 11,
+                "productos_id": 56,
+                "cant": 2,
+                "value": 11,
+                "cantidad_tallas": 2,
+                "pivot": {
+                    "productos_id": 56,
+                    "tallas_id": 11
+                }
+            }
+        ]
+    }
+]

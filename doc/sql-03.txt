@@ -1,0 +1,30 @@
+## Agregar las temporadas correspondientes a los partidos actuales
+
+CREATE TABLE `temporada_partido` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`status` ENUM('Activo','Inactivo') NULL DEFAULT 'Activo' COLLATE 'latin1_swedish_ci',
+	`name` VARCHAR(100) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`description` VARCHAR(250) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`deleted_at` TIMESTAMP NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB;
+
+
+
+##Agregar las temporadas a los partidos actuales.
+
+ALTER TABLE `partidos` ADD COLUMN `id_match_season` INT NULL AFTER `id`, ADD CONSTRAINT `ForeingKey-TemporadaPartido_Partido` FOREIGN KEY (`id_match_season`) REFERENCES `temporada_partido` (`id`) ON UPDATE NO ACTION ON DELETE RESTRICT;
+
+
+## Agrega el valor por al sorteo actual 1
+ALTER TABLE `sorteo` ADD COLUMN `matchNecesary` BIT NULL DEFAULT NULL AFTER `status`;
+
+
+
+## Agrega para el sorteo actual 10 partidos como total y para partidos necesarios colocar 8.
+
+ALTER TABLE `sorteo` ADD COLUMN `totalMatch` INT NULL AFTER `matchNecesary`, ADD COLUMN `matchNecesaryParticipate` INT NULL AFTER `totalMatch`;

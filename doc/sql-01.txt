@@ -1,0 +1,147 @@
+CREATE TABLE `cajas_registradoras` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_sucursal` INT(10) NOT NULL,
+	`status` ENUM('Activo','Inactivo') NOT NULL DEFAULT 'Activo' COLLATE 'latin1_swedish_ci',
+	`name` VARCHAR(50) NOT NULL COLLATE 'latin1_swedish_ci',
+	`description` VARCHAR(255) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Sucursal_CajasRegistradoras` (`id_sucursal`) USING BTREE,
+	CONSTRAINT `ForeingKey-Sucursal_CajasRegistradoras` FOREIGN KEY (`id_sucursal`) REFERENCES `sucursales` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+
+CREATE TABLE `registro_cajas` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_caja_registradora` INT(10) NOT NULL,
+	`id_responsible` INT(10) NOT NULL,
+	`cash_received` FLOAT NULL DEFAULT NULL,
+	`finaly_money` FLOAT NULL DEFAULT NULL,
+	`cash_outflow` FLOAT NULL DEFAULT NULL,
+	`sell_total` FLOAT NULL DEFAULT NULL,
+	`cash_diference` FLOAT NULL DEFAULT NULL,
+	`created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT NULL,
+    `status` ENUM('Activo','Inactivo') NOT NULL DEFAULT 'Activo' COLLATE 'latin1_swedish_ci',
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Usuario_RegistoCaja` (`id_responsible`) USING BTREE,
+	INDEX `ForeingKey-CajaRegistradora_RegistoCaja` (`id_caja_registradora`) USING BTREE,
+	CONSTRAINT `ForeingKey-CajaRegistradora_RegistoCaja` FOREIGN KEY (`id_caja_registradora`) REFERENCES `cajas_registradoras` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+	CONSTRAINT `ForeingKey-Usuario_RegistoCaja` FOREIGN KEY (`id_responsible`) REFERENCES `users` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+ALTER TABLE `tickets`
+	ADD COLUMN `id_registro_caja` INT NULL AFTER `id`,
+	ADD CONSTRAINT `ForeingKey-RegistoCaja_Tickets` FOREIGN KEY (`id_registro_caja`) REFERENCES `registro_cajas` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+
+CREATE TABLE `metodos_cobro` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(50) NOT NULL DEFAULT '' COLLATE 'latin1_swedish_ci',
+	`description` VARCHAR(250) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`deadlines` VARCHAR(200) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+CREATE TABLE `comision` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_method_payment` INT(10) NOT NULL,
+	`status` ENUM('Activo','Inactivo') NOT NULL DEFAULT 'Activo' COLLATE 'latin1_swedish_ci',
+	`payment_limit` FLOAT NULL DEFAULT NULL,
+	`comission` FLOAT NULL DEFAULT NULL,
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-MetodosCobro_Comision` (`id_method_payment`) USING BTREE,
+	CONSTRAINT `ForeingKey-MetodosCobro_Comision` FOREIGN KEY (`id_method_payment`) REFERENCES `metodos_cobro` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+ALTER TABLE `tickets`
+	ADD COLUMN `id_method_payment` INT NULL AFTER `is_generate_for_seat`,
+	ADD CONSTRAINT `ForeingKey-MetodosCobro_Tickets` FOREIGN KEY (`id_method_payment`) REFERENCES `metodos_cobro` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+
+CREATE TABLE `precio_asiento` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`price` FLOAT NULL DEFAULT NULL,
+	`created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+CREATE TABLE `precios_asientos` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_seat` INT(10) NOT NULL,
+	`id_seat_price` INT(10) NOT NULL,
+	`status` ENUM('Activo','Inactivo') NULL DEFAULT 'Activo' COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Asientos_PreciosAsientos` (`id_seat`) USING BTREE,
+	INDEX `ForeingKey-PrecioAsiento_Precios_Asientos` (`id_seat_price`) USING BTREE,
+	CONSTRAINT `ForeingKey-Asientos_PreciosAsientos` FOREIGN KEY (`id_seat`) REFERENCES `asientos` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+	CONSTRAINT `ForeingKey-PrecioAsiento_Precios_Asientos` FOREIGN KEY (`id_seat_price`) REFERENCES `precio_asiento` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+ALTER TABLE `precios_asientos`
+	ADD COLUMN `typePrice` ENUM('Unico','Abono') NULL DEFAULT NULL AFTER `updated_at`;
+
+
+ALTER TABLE `tickets_asiento`
+	ADD COLUMN `change` ENUM('cortesia-venta','consigna-venta') NULL DEFAULT NULL AFTER `folio`;
+
+
+ALTER TABLE `tickets_asiento`
+	ADD COLUMN `qr` VARCHAR(100) NULL DEFAULT NULL AFTER `change`;
+
+
+CREATE TABLE `tickets_cambiado` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_ticket` INT(10) NULL DEFAULT NULL,
+	`id_ticket_seat` INT(10) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Tickets_TicketsCambio` (`id_ticket`) USING BTREE,
+	INDEX `ForeingKey-TicketsAsiento_TicketCambio` (`id_ticket_seat`) USING BTREE,
+	CONSTRAINT `ForeingKey-TicketsAsiento_TicketCambio` FOREIGN KEY (`id_ticket_seat`) REFERENCES `tickets_asiento` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `ForeingKey-Tickets_TicketsCambio` FOREIGN KEY (`id_ticket`) REFERENCES `tickets` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+ALTER TABLE `tickets_asiento` ADD COLUMN `id_seat_price` INT NULL AFTER `tickets_id`, ADD CONSTRAINT `ForeingKey-PrecioAsiento_TicketsAsiento` FOREIGN KEY (`id_seat_price`) REFERENCES `precios_asientos` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE `tickets_asiento` ADD COLUMN `id_seat_price_subcription` INT NULL AFTER `id_seat_price`, ADD CONSTRAINT `ForeingKey-PrecioAsientoAbono_TicketsAsiento` FOREIGN KEY (`id_seat_price_subcription`) REFERENCES `precios_asientos` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+
+ALTER TABLE `precio_asiento` ADD COLUMN `description` VARCHAR(255) NULL DEFAULT NULL AFTER `updated_at`;
+
+
+ALTER TABLE `grupos_asiento` CHANGE COLUMN `descripción` `descripcion` VARCHAR(256) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci' AFTER `nombre`;

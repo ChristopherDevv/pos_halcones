@@ -1,0 +1,66 @@
+CREATE TABLE `abonados` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_ticket` INT(10) NOT NULL,
+	`id_ticket_seat` INT(10) NOT NULL,
+	`holder` TINYINT(3) NULL DEFAULT NULL,
+	`name` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`paternalSurname` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`maternalSurname` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Ticket_Abonados` (`id_ticket`) USING BTREE,
+	INDEX `ForeingKey-TicketAsiento_Abonados` (`id_ticket_seat`) USING BTREE,
+	CONSTRAINT `ForeingKey-TicketAsiento_Abonados` FOREIGN KEY (`id_ticket_seat`) REFERENCES `tickets_asiento` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+	CONSTRAINT `ForeingKey-Ticket_Abonados` FOREIGN KEY (`id_ticket`) REFERENCES `tickets` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+CREATE TABLE `abono_partido` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_subscribers` INT(10) NOT NULL,
+	`id_match` INT(10) NOT NULL,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Abonos_AbonoPartido` (`id_subscribers`) USING BTREE,
+	INDEX `ForeingKey-Partidos_AbonoPartido` (`id_match`) USING BTREE,
+	CONSTRAINT `ForeingKey-Abonos_AbonoPartido` FOREIGN KEY (`id_subscribers`) REFERENCES `abonados` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+	CONSTRAINT `ForeingKey-Partidos_AbonoPartido` FOREIGN KEY (`id_match`) REFERENCES `partidos` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+
+CREATE TABLE `asiento_temporada` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`id_seat` INT(10) NOT NULL,
+	`id_season` INT(10) NOT NULL,
+	`status` INT(10) NOT NULL DEFAULT '1',
+	`lastStatus` INT(10) NOT NULL DEFAULT '1',
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `ForeingKey-Seats_SeasonSeats` (`id_seat`) USING BTREE,
+	INDEX `ForeingKey-Season_SeasonSeats` (`id_season`) USING BTREE,
+	CONSTRAINT `ForeingKey-Season_SeasonSeats` FOREIGN KEY (`id_season`) REFERENCES `temporada_partido` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE,
+	CONSTRAINT `ForeingKey-Seats_SeasonSeats` FOREIGN KEY (`id_seat`) REFERENCES `asientos` (`id`) ON UPDATE NO ACTION ON DELETE CASCADE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+
+
+ALTER TABLE `precios_asientos`
+	ADD COLUMN `id_season` INT NULL AFTER `id_seat_price`,
+	ADD CONSTRAINT `ForeingKey-TemporadaPartido_Precios_Asientos` FOREIGN KEY (`id_season`) REFERENCES `temporada_partido` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+
+
+
+
+
+UPDATE  precios_asientos SET `status` = 'Inactivo';
